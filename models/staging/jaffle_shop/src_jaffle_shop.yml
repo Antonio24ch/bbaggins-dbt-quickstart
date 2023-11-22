@@ -2,11 +2,14 @@ version: 2
 
 sources:
   - name: jaffle_shop
+    description: a clone of a postgres application dabatabase
     database: dbt-tutorial
     tables:
       - name: customers
+        description: the raw customers data
         columns:
           - name: id
+            description: the primary key
             tests:
               - unique
               - not_null
